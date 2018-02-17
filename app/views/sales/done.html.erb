@@ -1,0 +1,26 @@
+<%= notice %>
+
+<table>
+	<tr>
+		<th>COD</th>
+		<th>Detalle</th>
+		<th>Categoria</th>
+		<th>Descuento</th>
+		<th>Valor</th>
+		<th>Iva</th>
+		<th>Total</th>								
+	</tr>
+
+<tr>
+	<td><%= @sale.cod %> </td>
+	<td><%= @sale.detail %> </td>
+	<td><%= @sale.category %> </td>
+	<td><%= @sale.discount %> </td>
+	<td><%= @sale.value %> </td>
+	<td><%= @sale.tax %> </td>
+	<td><%= @sale.total %> </td>
+</tr>
+
+</table>
+
+<%= link to 'Back', root_path %>
